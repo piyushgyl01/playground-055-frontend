@@ -26,9 +26,9 @@ export default function App() {
           <Route element={<PrivateRoute />}>
             <Route path="/editor" element={<Edit />} />
             <Route path="/editor/:id" element={<Edit />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/profile/:username" element={<Profile />} />
           </Route>
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/profile/:username" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
