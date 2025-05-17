@@ -164,7 +164,7 @@ export default function Edit() {
       <div className="card shadow-sm">
         <div className="card-body">
           <h1 className="text-center mb-4">
-            {isEditing ? "Edit post" : "New post"}
+            {isEditing ? "Edit Post" : "New Post"}
           </h1>
 
           {error && <div className="alert alert-danger">{error}</div>}
@@ -181,7 +181,7 @@ export default function Edit() {
                 }`}
                 id="postTitle"
                 name="title"
-                placeholder="post Title"
+                placeholder="Post Title"
                 value={formData.title}
                 onChange={handleChange}
               />
@@ -288,7 +288,7 @@ export default function Edit() {
                     Saving...
                   </>
                 ) : (
-                  "Publish post"
+                  "Publish Post"
                 )}
               </button>
             </div>
