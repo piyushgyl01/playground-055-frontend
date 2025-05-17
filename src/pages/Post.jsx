@@ -281,9 +281,7 @@ export default function Post() {
                   ) : (
                     <button
                       className={`btn ${
-                        post.favorited
-                          ? "btn-primary"
-                          : "btn-outline-primary"
+                        post.favorited ? "btn-primary" : "btn-outline-primary"
                       }`}
                       onClick={handleFavorite}
                     >
@@ -435,8 +433,8 @@ export default function Post() {
               </div>
               <div className="modal-body">
                 <p>
-                  Are you sure you want to delete this post? This action
-                  cannot be undone.
+                  Are you sure you want to delete this post? This action cannot
+                  be undone.
                 </p>
               </div>
               <div className="modal-footer">
