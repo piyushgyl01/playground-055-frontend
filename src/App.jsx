@@ -11,11 +11,11 @@ import Settings from "./pages/Settings";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/PrivateRoute";
-// import { AuthProvider } from "./contexts/authContext";
+import { AuthProvider } from "./contexts/authContext";
 
 export default function App() {
   return (
-    // <AuthProvider>
+    <AuthProvider>
       <Router>
         <Navbar />
         <Routes>
@@ -33,6 +33,6 @@ export default function App() {
         </Routes>
         <Footer />
       </Router>
-    // </AuthProvider>
+    </AuthProvider>
   );
 }
