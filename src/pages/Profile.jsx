@@ -223,7 +223,7 @@ export default function Profile() {
                 setActiveTab("authored");
               }}
             >
-              posts
+              Posts
             </a>
           </li>
           <li className="nav-item">
